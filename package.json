@@ -1,0 +1,27 @@
+{
+  "name": "notkaramel-server",
+  "version": "1.0.0",
+  "description": "@notkaramel's backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/notkaramel/portfolio-backend.git"
+  },
+  "keywords": [
+    "backend",
+    "server",
+    "npm"
+  ],
+  "author": "Antoine Phan (@notkaramel)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notkaramel/portfolio-backend/issues"
+  },
+  "homepage": "https://github.com/notkaramel/portfolio-backend#readme",
+  "dependencies": {
+    "nodejs": "^0.0.0"
+  }
+}
