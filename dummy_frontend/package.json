@@ -1,0 +1,15 @@
+{
+  "name": "dummy_frontend",
+  "version": "1.0.0",
+  "description": "dummy frontend to test HTTP req/res with backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@notkaramel",
+  "license": "ISC",
+  "dependencies": {
+    "ajax": "^0.0.4"
+  }
+}

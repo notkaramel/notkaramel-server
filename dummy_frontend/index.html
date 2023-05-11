@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Dummy Frontend Web App</title>
+	</head>
+	<body>
+		<h1>Dummy Frontend Web App</h1>
+		<button id="button1">Ping Server 1</button>
+		<script>
+			var xhr = new XMLHttpRequest();
+			const serverURL = 'http://172.17.0.2:3000'; // Replace with your server URL
+			const button1 = document.getElementById('button1');
+
+			button1.addEventListener('focus', () => {
+				button1.style.color = 'red';
+			});
+
+			xhr.open('GET', `${serverURL}`);
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+			xhr.send();
+
+			button1.addEventListener('click', () => {
+				fetch('http://172.17.0.2:3000/')
+					.then((response) => response.json())
+					.then((res) => console.log(res));
+			});
+		</script>
+	</body>
+</html>
